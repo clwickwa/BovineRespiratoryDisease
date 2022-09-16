@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:03:51.646552
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: None
+dataset: TIAM_16BP_OA1.kover
+hp_choice: cv
+kmer_blacklist: None
+max_equiv_rules: 10000
+max_rules: 5
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: .
+p: [0.1, 0.178, 0.316, 0.562, 1.0, 1.778, 3.162, 5.623, 10.0]
+progress: True
+random_seed: None
+split: TIAM_16BP_OA1_split
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/bell/clwickwa/BRD/MultiSource/Owen_ADDL1/TIAM/TIAM_16BP/TIAM_16BP_OA1.kover
+Dataset UUID: de0e715e-4c72-11ec-aba1-2000015bfe80
+Phenotype: Tiamulin, 16Mg Bp
+Genomic data type: tsv
+Split: TIAM_16BP_OA1_split
+Number of genomes used for training: 55 (Group 0: 21, Group 1: 34)
+Number of genomes used for testing: 27 (Group 0: 11, Group 1: 16)
+Number of k-mers: 21085601
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 5-fold cross-validation (score = 0.12727)
+Model type: disjunction
+p: 3.162000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01818
+Sensitivity: 1.0
+Specificity: 0.95238
+Precision: 0.97143
+Recall: 1.0
+F1 Score: 0.98551
+True Positives: 34.0
+True Negatives: 20.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.14815
+Sensitivity: 0.875
+Specificity: 0.81818
+Precision: 0.875
+Recall: 0.875
+F1 Score: 0.875
+True Positives: 14.0
+True Negatives: 9.0
+False Positives: 2.0
+False Negatives: 2.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Presence(atgcgggttcgattcccgctgcccgctccaa) [Importance: 0.80, 1 equivalent rules]
+OR
+Presence(aaagatctacatcactaattttcagtttcac) [Importance: 0.23, 31 equivalent rules]
+OR
+Presence(gccgacagccgacagccgacagccgacagcc) [Importance: 0.23, 1 equivalent rules]

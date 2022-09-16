@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:03:41.712534
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: None
+dataset: PEN_1BP_OA1.kover
+hp_choice: cv
+kmer_blacklist: None
+max_equiv_rules: 10000
+max_rules: 5
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: .
+p: [0.1, 0.178, 0.316, 0.562, 1.0, 1.778, 3.162, 5.623, 10.0]
+progress: True
+random_seed: None
+split: PEN_1BP_OA1_split
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/bell/clwickwa/BRD/MultiSource/Owen_ADDL1/PEN/PEN_1BP/PEN_1BP_OA1.kover
+Dataset UUID: 0534d508-4c72-11ec-937c-2000015cfe80
+Phenotype: Penicillin Resistance, 1Mg Breakpoint
+Genomic data type: tsv
+Split: PEN_1BP_OA1_split
+Number of genomes used for training: 55 (Group 0: 38, Group 1: 17)
+Number of genomes used for testing: 27 (Group 0: 20, Group 1: 7)
+Number of k-mers: 21085601
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 5-fold cross-validation (score = 0.12727)
+Model type: conjunction
+p: 0.562000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.10909
+Sensitivity: 0.64706
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.64706
+F1 Score: 0.78571
+True Positives: 11.0
+True Negatives: 38.0
+False Positives: 0.0
+False Negatives: 6.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0
+Sensitivity: 1.0
+Specificity: 1.0
+Precision: 1.0
+Recall: 1.0
+F1 Score: 1.0
+True Positives: 7.0
+True Negatives: 20.0
+False Positives: 0.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(aacttttcagctaattcaaataatgccttat) [Importance: 1.00, 31 equivalent rules]

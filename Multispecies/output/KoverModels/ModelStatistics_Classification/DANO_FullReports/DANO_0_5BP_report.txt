@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:03:23.469749
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: None
+dataset: DANO_0_5BP_OA1.kover
+hp_choice: cv
+kmer_blacklist: None
+max_equiv_rules: 10000
+max_rules: 5
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: .
+p: [0.1, 0.178, 0.316, 0.562, 1.0, 1.778, 3.162, 5.623, 10.0]
+progress: True
+random_seed: None
+split: DANO_0_5BP_OA1_split
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/bell/clwickwa/BRD/MultiSource/Owen_ADDL1/DANO/DANO_0_5BP/DANO_0_5BP_OA1.kover
+Dataset UUID: a5fef71e-4c79-11ec-86a9-2000015cfe80
+Phenotype: Danofloxacin, 0.5Mg Bp
+Genomic data type: tsv
+Split: DANO_0_5BP_OA1_split
+Number of genomes used for training: 55 (Group 0: 36, Group 1: 19)
+Number of genomes used for testing: 27 (Group 0: 19, Group 1: 8)
+Number of k-mers: 21085601
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 5-fold cross-validation (score = 0.20000)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.10909
+Sensitivity: 0.84211
+Specificity: 0.91667
+Precision: 0.84211
+Recall: 0.84211
+F1 Score: 0.84211
+True Positives: 16.0
+True Negatives: 33.0
+False Positives: 3.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.33333
+Sensitivity: 0.625
+Specificity: 0.68421
+Precision: 0.45455
+Recall: 0.625
+F1 Score: 0.52632
+True Positives: 5.0
+True Negatives: 13.0
+False Positives: 6.0
+False Negatives: 3.0
+
+Model (Conjunction - 2 rules):
+------------------------------
+Presence(aaaattggaaaaatctgaattatccattagt) [Importance: 0.83, 25 equivalent rules]
+AND
+Absence(aaaaccgggataaggtgcagtacgaatattg) [Importance: 0.22, 31 equivalent rules]
