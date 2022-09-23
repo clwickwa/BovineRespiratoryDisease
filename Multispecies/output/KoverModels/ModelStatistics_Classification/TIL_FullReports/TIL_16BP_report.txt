@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:02:53.429896
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: None
+dataset: TIL_16BP_OA1.kover
+hp_choice: cv
+kmer_blacklist: None
+max_equiv_rules: 10000
+max_rules: 5
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: .
+p: [0.1, 0.178, 0.316, 0.562, 1.0, 1.778, 3.162, 5.623, 10.0]
+progress: True
+random_seed: None
+split: TIL_16BP_OA1_split
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/bell/clwickwa/BRD/MultiSource/Owen_ADDL1/TIL/16BP/TIL_16BP_OA1.kover
+Dataset UUID: ea9fbb5c-4c73-11ec-b87c-2000015cfe80
+Phenotype: Tilmicosin, 16Mg Bp
+Genomic data type: tsv
+Split: TIL_16BP_OA1_split
+Number of genomes used for training: 55 (Group 0: 20, Group 1: 35)
+Number of genomes used for testing: 27 (Group 0: 8, Group 1: 19)
+Number of k-mers: 21085601
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 5-fold cross-validation (score = 0.09091)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.09091
+Sensitivity: 0.97143
+Specificity: 0.8
+Precision: 0.89474
+Recall: 0.97143
+F1 Score: 0.93151
+True Positives: 34.0
+True Negatives: 16.0
+False Positives: 4.0
+False Negatives: 1.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.14815
+Sensitivity: 1.0
+Specificity: 0.5
+Precision: 0.82609
+Recall: 1.0
+F1 Score: 0.90476
+True Positives: 19.0
+True Negatives: 4.0
+False Positives: 4.0
+False Negatives: 0.0
+
+Model (Disjunction - 1 rules):
+------------------------------
+Absence(aaaaccgacacaggtggtcaggtagagaata) [Importance: 1.00, 128 equivalent rules]

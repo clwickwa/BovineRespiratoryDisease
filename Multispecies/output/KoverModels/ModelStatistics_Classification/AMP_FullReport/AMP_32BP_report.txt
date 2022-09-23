@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:02:48.616088
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: None
+dataset: AMP_32BP_OA1.kover
+hp_choice: cv
+kmer_blacklist: None
+max_equiv_rules: 10000
+max_rules: 5
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: .
+p: [0.1, 0.178, 0.316, 0.562, 1.0, 1.778, 3.162, 5.623, 10.0]
+progress: True
+random_seed: None
+split: AMP_32BP_OA1_split
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/bell/clwickwa/BRD/MultiSource/Owen_ADDL1/AMP/AMP_32BP/AMP_32BP_OA1.kover
+Dataset UUID: 21fad984-4c6e-11ec-9096-2000015afe80
+Phenotype: Ampicillin Resistance, 32Mg Breakpoint
+Genomic data type: tsv
+Split: AMP_32BP_OA1_split
+Number of genomes used for training: 55 (Group 0: 45, Group 1: 10)
+Number of genomes used for testing: 27 (Group 0: 21, Group 1: 6)
+Number of k-mers: 21085601
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 5-fold cross-validation (score = 0.03636)
+Model type: conjunction
+p: 10.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01818
+Sensitivity: 1.0
+Specificity: 0.97778
+Precision: 0.90909
+Recall: 1.0
+F1 Score: 0.95238
+True Positives: 10.0
+True Negatives: 44.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.14815
+Sensitivity: 1.0
+Specificity: 0.80952
+Precision: 0.6
+Recall: 1.0
+F1 Score: 0.75
+True Positives: 6.0
+True Negatives: 17.0
+False Positives: 4.0
+False Negatives: 0.0
+
+Model (Conjunction - 2 rules):
+------------------------------
+Presence(aaacagacatccaacagtctgctaacctaac) [Importance: 0.84, 26 equivalent rules]
+AND
+Presence(aaacagggctataaacgccccgcctcaatct) [Importance: 0.73, 43 equivalent rules]

@@ -1,0 +1,79 @@
+Kover Learning Report
+=====================
+
+Running time: 0:05:02.797015
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: None
+dataset: TULA_16BP_OA1.kover
+hp_choice: cv
+kmer_blacklist: None
+max_equiv_rules: 10000
+max_rules: 5
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: .
+p: [0.1, 0.178, 0.316, 0.562, 1.0, 1.778, 3.162, 5.623, 10.0]
+progress: True
+random_seed: None
+split: TULA_16BP_OA1_split
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/bell/clwickwa/BRD/MultiSource/Owen_ADDL1/TULA/16BP/TULA_16BP_OA1.kover
+Dataset UUID: d2c80f9c-4c74-11ec-822a-2000015bfe80
+Phenotype: Tulathromycin Resistance, 16Mg Breakpoint
+Genomic data type: tsv
+Split: TULA_16BP_OA1_split
+Number of genomes used for training: 55 (Group 0: 36, Group 1: 19)
+Number of genomes used for testing: 27 (Group 0: 17, Group 1: 10)
+Number of k-mers: 21085601
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 5-fold cross-validation (score = 0.16364)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 5
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01818
+Sensitivity: 1.0
+Specificity: 0.97222
+Precision: 0.95
+Recall: 1.0
+F1 Score: 0.97436
+True Positives: 19.0
+True Negatives: 35.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.48148
+Sensitivity: 0.5
+Specificity: 0.52941
+Precision: 0.38462
+Recall: 0.5
+F1 Score: 0.43478
+True Positives: 5.0
+True Negatives: 9.0
+False Positives: 8.0
+False Negatives: 5.0
+
+Model (Disjunction - 5 rules):
+------------------------------
+Presence(ctagaaaatgttaaaactaaattgcttgaat) [Importance: 0.60, 3 equivalent rules]
+OR
+Presence(aaacccgatttcgattttggcgttgccgtta) [Importance: 0.15, 49 equivalent rules]
+OR
+Presence(agcagtttatccaagtacgggaatattaacc) [Importance: 0.15, 1 equivalent rules]
+OR
+Presence(tagtttaggttagttatctaggacagcccct) [Importance: 0.50, 1 equivalent rules]
+OR
+Presence(ttcagcttgtttccaattttttaaagaacat) [Importance: 0.05, 9380 equivalent rules]

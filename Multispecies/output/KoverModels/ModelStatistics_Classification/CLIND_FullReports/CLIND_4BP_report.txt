@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:02:20.506072
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: None
+dataset: CLIND_4BP_OA1.kover
+hp_choice: cv
+kmer_blacklist: None
+max_equiv_rules: 10000
+max_rules: 5
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: .
+p: [0.1, 0.178, 0.316, 0.562, 1.0, 1.778, 3.162, 5.623, 10.0]
+progress: True
+random_seed: None
+split: CLIND_4BP_OA1_split
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/bell/clwickwa/BRD/MultiSource/Owen_ADDL1/CLIND/4BP/CLIND_4BP_OA1.kover
+Dataset UUID: b715dad2-4c6e-11ec-b844-2000015afe80
+Phenotype: Clindamycin, 4Mg Bp
+Genomic data type: tsv
+Split: CLIND_4BP_OA1_split
+Number of genomes used for training: 55 (Group 0: 13, Group 1: 42)
+Number of genomes used for testing: 27 (Group 0: 5, Group 1: 22)
+Number of k-mers: 21085601
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 5-fold cross-validation (score = 0.09091)
+Model type: disjunction
+p: 3.162000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01818
+Sensitivity: 1.0
+Specificity: 0.92308
+Precision: 0.97674
+Recall: 1.0
+F1 Score: 0.98824
+True Positives: 42.0
+True Negatives: 12.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.11111
+Sensitivity: 0.90909
+Specificity: 0.8
+Precision: 0.95238
+Recall: 0.90909
+F1 Score: 0.93023
+True Positives: 20.0
+True Negatives: 4.0
+False Positives: 1.0
+False Negatives: 2.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Absence(aaaaccgacacaggtggtcaggtagagaata) [Importance: 0.95, 87 equivalent rules]
+OR
+Presence(cgtaggttcaaatcctatctcgccgaccact) [Importance: 0.93, 2 equivalent rules]

@@ -1,6 +1,6 @@
-# Multi-species analysis
+# Mannheimia analysis
 
-Within this directory you will find input and output files, and scripts for running:
+Within this directory you will find input and output files and scripts for running:
 
 ###### - ARG analysis with CARD-RGI (https://card.mcmaster.ca/analyze/rgi)
 
